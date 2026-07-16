@@ -573,7 +573,7 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   height: auto;
 }
