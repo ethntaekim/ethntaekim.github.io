@@ -580,9 +580,11 @@ strong {
 .about-image {
   border-radius: var(--border-radius-medium);
   width: 100%;
-  height: auto;
+  height: 85vh;        /* sized relative to the screen, not a parent */
+  max-height: 700px;   /* optional: stops it getting huge on tall monitors */
+  object-fit: cover;   /* crop instead of stretch */
+  object-position: top;/* keeps his face in frame when cropping */
 }
-
 .about-thumb {
   padding-right: 20px;
   padding-left: 20px;
