@@ -573,9 +573,11 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
-  max-width: 500px;
+  max-width: 320px;
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .about-thumb {
