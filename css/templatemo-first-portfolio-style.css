@@ -230,7 +230,7 @@ strong {
   CUSTOM ICON               
 -----------------------------------------*/
 .navbar-icon {
-  background: var(--secondary-color);
+  background: transparent;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   width: 47px;
