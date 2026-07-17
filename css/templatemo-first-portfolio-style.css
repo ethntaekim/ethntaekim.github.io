@@ -145,6 +145,10 @@ a:hover {
   padding-bottom: 120px;
 }
 
+.about.section-padding {
+  padding-top: 40px;
+}
+
 b,
 strong {
   font-weight: var(--font-weight-bold);
