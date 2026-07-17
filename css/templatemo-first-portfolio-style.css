@@ -237,6 +237,8 @@ strong {
   height: 47px;
   line-height: 47px;
   text-align: center;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .is-sticky .navbar-icon {
