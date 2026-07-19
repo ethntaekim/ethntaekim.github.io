@@ -230,7 +230,7 @@ strong {
   CUSTOM ICON               
 -----------------------------------------*/
 .navbar-icon {
-  background: transparent;
+  background: var(--secondary-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   width: 47px;
@@ -238,7 +238,12 @@ strong {
   line-height: 47px;
   text-align: center;
   display: inline-block;
+  font-size: 18px;
   text-decoration: none;
+}
+
+.navbar-icon:hover {
+  color: var(--white-color);
 }
 
 .is-sticky .navbar-icon {
@@ -346,7 +351,7 @@ strong {
 
 .navbar {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 9;
   right: 0;
   left: 0;
@@ -477,11 +482,7 @@ strong {
   top: 8px;
 }
 
-.linkedin-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
+
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
@@ -784,6 +785,42 @@ strong {
   color: var(--secondary-color);
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+/* New project card grid (image on top, info below, links to a dedicated project page) */
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card-link .projects-thumb {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-card-link .projects-image {
+  transform: none;
+  border-radius: 0;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-card-link .projects-thumb:hover .projects-image {
+  transform: none;
+}
+
+.project-card-link .projects-info {
+  padding: 24px;
+}
+
+.project-card-link .projects-title {
+  margin-bottom: 10px;
+}
+
+.projects-description {
+  color: var(--p-color);
+  margin-bottom: 0;
 }
 
 
