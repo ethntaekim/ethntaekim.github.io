@@ -789,7 +789,8 @@ strong {
 }
 
 .projects-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: var(--h6-font-size);
 }
 
 .projects-tag {
@@ -802,12 +803,17 @@ strong {
 
 /* New project card grid (image on top, info below, links to a dedicated project page) */
 .project-card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: inherit;
 }
 
 .project-card-link .projects-thumb {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   overflow: hidden;
 }
@@ -824,6 +830,9 @@ strong {
 }
 
 .project-card-link .projects-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 24px;
 }
 
@@ -834,8 +843,33 @@ strong {
 .projects-description {
   color: var(--p-color);
   margin-bottom: 0;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
+.projects-description.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.view-more-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 6px;
+  color: var(--secondary-color);
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.view-more-btn:hover {
+  text-decoration: underline;
+}
 
 /*---------------------------------------
   CONTACT              
