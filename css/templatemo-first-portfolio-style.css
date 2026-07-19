@@ -10,7 +10,11 @@ https://templatemo.com/tm-578-first-portfolio
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
-
+.projects-date {
+  font-size: var(--menu-font-size);
+  color: var(--p-color);
+  float: right;
+}
 #section_2 {
   min-height: 100vh;
   display: flex;
