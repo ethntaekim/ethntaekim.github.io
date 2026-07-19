@@ -242,6 +242,12 @@ strong {
   text-decoration: none;
 }
 
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .navbar-icon:hover {
   color: var(--white-color);
 }
